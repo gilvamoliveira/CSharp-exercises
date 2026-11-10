@@ -1,0 +1,21 @@
+using CSharpExercises.Comum;
+
+namespace CSharpExercises.ListaXX;
+
+// Modelo para um exercício novo: copie este arquivo (sem o .txt) para a pasta da
+// lista, troque XX pelo capítulo, LXXA pelo código e escreva o enunciado/solução.
+public sealed class LXXA : Exercicio
+{
+    public override string Codigo => "LXXA";
+    public override string Titulo => "Título curto do exercício";
+
+    public override string Enunciado => """
+        Copie aqui o enunciado do livro.
+        """;
+
+    public override void Executar()
+    {
+        // TODO: implemente o exercício aqui.
+        throw new NotImplementedException();
+    }
+}
