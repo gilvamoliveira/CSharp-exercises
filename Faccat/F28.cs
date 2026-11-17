@@ -17,6 +17,5 @@ public sealed class F28 : Exercicio
     public override void Executar()
     {
         // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
     }
 }

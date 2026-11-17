@@ -37,13 +37,14 @@ public sealed class F05 : Exercicio
     public override void Executar()
     {
         // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
     }
 }
 ```
 
-Você só mexe no `Executar()`. O progresso é contado pelos arquivos que **ainda contêm `TODO`**:
-quando você apagar essa linha, o exercício aparece como concluído no menu e no `status`.
+Você só mexe no `Executar()`: digite o código ali dentro e apague a linha do `TODO`.
+Não existe nenhum `throw` no modelo, então o programa roda na hora — nada de "Ainda não
+implementado". O progresso é contado pelos arquivos que **ainda contêm `TODO`**: quando você
+apagar essa linha, o exercício aparece como concluído no menu e no `status`.
 
 Ajuda pronta em `Comum/Entrada.cs`:
 

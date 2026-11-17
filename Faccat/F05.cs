@@ -16,7 +16,9 @@ public sealed class F05 : Exercicio
 
     public override void Executar()
     {
-        // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
+        int numero = Entrada.LerInteiro();
+        int antecessor = numero - 1;
+
+        Console.WriteLine($"O antecessor de {numero} é {antecessor}.");
     }
 }

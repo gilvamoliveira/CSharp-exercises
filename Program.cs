@@ -140,13 +140,15 @@ static void Rodar(Exercicio exercicio)
     {
         exercicio.Executar();
     }
-    catch (NotImplementedException)
-    {
-        Console.WriteLine($">>> Ainda não implementado. Abra {exercicio.Lista}\\{exercicio.Codigo}.cs e escreva sua solução.");
-    }
     catch (Exception erro)
     {
         Console.WriteLine($">>> Erro: {erro.Message}");
+    }
+
+    if (Progresso.Pendente(exercicio))
+    {
+        Console.WriteLine();
+        Console.WriteLine($">>> Pendente: escreva a solução em {exercicio.Lista}\\{exercicio.Codigo}.cs e apague o TODO.");
     }
 
     Entrada.Pausar();

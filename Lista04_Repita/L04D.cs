@@ -23,6 +23,5 @@ public sealed class L04D : Exercicio
     public override void Executar()
     {
         // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
     }
 }

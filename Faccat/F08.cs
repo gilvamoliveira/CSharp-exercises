@@ -18,7 +18,37 @@ public sealed class F08 : Exercicio
 
     public override void Executar()
     {
-        // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
+        Console.Write("Digite o número total de eleitores: ");
+        int totalEleitores = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        Console.Write("Digite o número de votos brancos: ");
+        int votosBrancos = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        Console.Write("Digite o número de votos nulos: ");
+        int votosNulos = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        Console.Write("Digite o número de votos válidos: ");
+        int votosValidos = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        if (totalEleitores <= 0)
+        {
+            Console.WriteLine("O número total de eleitores deve ser maior que zero.");
+        }
+        else
+        {
+            double percentualBrancos = (double)votosBrancos / totalEleitores * 100;
+            double percentualNulos = (double)votosNulos / totalEleitores * 100;
+            double percentualValidos = (double)votosValidos / totalEleitores * 100;
+
+            Console.WriteLine($"Percentual de votos brancos: {percentualBrancos:F2}%");
+            Console.WriteLine($"Percentual de votos nulos: {percentualNulos:F2}%");
+            Console.WriteLine($"Percentual de votos válidos: {percentualValidos:F2}%");
+        }
+
+
     }
 }

@@ -17,7 +17,20 @@ public sealed class F07 : Exercicio
 
     public override void Executar()
     {
-        // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
+        Console.Write("Digite a idade em anos: ");
+        int anos = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        Console.Write("Digite a idade em meses: ");
+        int meses = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        Console.Write("Digite a idade em dias: ");
+        int dias = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("");
+
+        int idadeEmDias = (anos * 365) + (meses * 30) + dias;
+
+        Console.WriteLine($"Dias desde o seu nascimento: {idadeEmDias}");
     }
 }

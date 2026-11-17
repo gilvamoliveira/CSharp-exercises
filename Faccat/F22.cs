@@ -21,6 +21,5 @@ public sealed class F22 : Exercicio
     public override void Executar()
     {
         // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
     }
 }

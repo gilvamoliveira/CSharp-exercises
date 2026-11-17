@@ -17,7 +17,16 @@ public sealed class F06 : Exercicio
 
     public override void Executar()
     {
-        // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
+        Console.Write("Digite o valor da base: ");
+        double baseRetangulo = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("");
+
+        Console.Write("Digite o valor da altura: ");
+        double alturaRetangulo = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine("");
+
+        double areaRetangulo = baseRetangulo * alturaRetangulo;
+
+        Console.WriteLine($"A área do retângulo é: {areaRetangulo}");
     }
 }

@@ -18,6 +18,5 @@ public sealed class L05K : Exercicio
     public override void Executar()
     {
         // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
     }
 }

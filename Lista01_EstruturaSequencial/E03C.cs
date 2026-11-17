@@ -28,6 +28,5 @@ public sealed class E03C : Exercicio
     public override void Executar()
     {
         // TODO: implemente o exercício aqui.
-        throw new NotImplementedException();
     }
 }
